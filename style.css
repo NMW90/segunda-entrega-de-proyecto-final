@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vh{
+    background-color: #000;
+    background-image: url(./img/bee-halictus-macro-pollinator.jpg);
+}
+.imgFluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sub1{
+    display: flex;
+    align-items: flex-start;
+    background-color: orange;
+}
+.sub1 h2{
+    color: #000;
+    background-color: orange;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 244, 28);
+    text-decoration: none;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.textStile{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 50px; 
+}
+
+.aligne{
+    text-align: right;
+    color: #000;
+}
+
+.linkSize{
+    font-size: 25px;
+    color: #000;
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+h2{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+.galeria{
+    height: 800px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display:grid;
+    padding: 20px;
+    gap:10px;
+}
+.img{
+    background-color: coral;
+    border:2px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 5px gray ;
+    transition: all 0.7s;
+
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+.img1{
+    
+    background-color: blue;
+    background-image: url(./img/apicultores.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+
+    background-color: cadetblue;
+    background-image: url(./img/reina.jpeg);
+    background-position: center;
+    background-size: center;
+
+}
+.img3{
+    
+    background-color: brown;
+    background-image: url(./img/apicultor.jpeg);
+    background-position: center;
+    background-size: center;
+}
+.img4{
+    
+    background-color: crimson;
+    background-image: url(./img/colmena.jpeg);
+    background-position:center;
+    background-size:cover;
+}
+.img5{
+    background-color: darkolivegreen;
+    background-image: url(./img/honey-sweet-syrup-organic.webp);
+    background-position: center;
+    background-size: center;
+
+
+}
+.img6{
+    background-color: firebrick;
+    background-image: url(./img/flower-sunflower-karnataka-india-64221.jpeg);
+    background-position: center;
+    background-size: center;
+}
+.img7{
+    
+    background-color: cyan;
+    background-image: url(./img/abejapolen.jpeg);
+    background-position: center;
+    background-size: center;
+}
+.img8{
+    background-color: burlywood;
+    background-image: url(./img/marcoCria.jpeg);
+    background-position: center;
+    background-size: center;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 244, 28);
+    font-size: 25px;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+
+}
+.right{
+    text-align: right;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .img{
+        height:175px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .img1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .img2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .img5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+
+    }
+    .img6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .img7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .img8{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+    @media only screen and (min-width: 1024px){
+
+.galeria{
+    grid-template-columns: repeat(4,1fr);
+}
+.img{
+    height: auto;
+}
+.img1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.img2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+}
+.img3{
+    grid-column: 3/5;
+    grid-row: 1/2;
+
+}
+.img4{
+    grid-column: 2/3;
+    grid-row: 2/4;
+
+}
+.img5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.img6{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.img7{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    
+}
+.img8{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    
+}
+    }
